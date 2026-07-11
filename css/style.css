@@ -1,0 +1,470 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.btn{
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(13,110,253,.3);
+}
+
+.profile-img{
+    transition: .4s ease;
+}
+
+.profile-img:hover{
+    transform: scale(1.05);
+}
+
+.card{
+    transition: .4s ease;
+    background:#1e293b;
+     overflow: visible;
+}
+
+.card h4{
+    color: #fff;
+}
+
+.card p{
+    color: #e2e8f0;
+}
+
+.navbar{
+    background:#020617 !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand{
+    color:#f8fafc !important;
+}
+
+
+
+.nav-link{
+    position: relative;
+    transition: .3s;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#0d6efd;
+    transition:.3s;
+}
+
+.nav-link.active::after{
+    width:100%;
+}
+
+
+.hero{
+    padding-top:140px;
+    padding-bottom:90px;
+    background-color:#020617;
+     position: relative;
+    overflow: hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:rgba(13,110,253,.08);
+    border-radius:50%;
+    top:-80px;
+    right:-80px;
+}
+
+
+.profile-img{
+
+    width:350px;
+    border-radius:50%;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.nav-link{
+    margin-left:20px;
+      position:relative;
+}
+
+
+/*==========================
+        SKILLS
+===========================*/
+
+.skills{
+     background:#111827;
+}
+
+.section-title h2{
+
+    font-weight:700;
+
+    color:#f8fafc;
+
+}
+
+.line{
+
+    width:70px;
+
+    height:4px;
+
+    background:#0d6efd;
+
+    margin:15px auto 25px;
+
+    border-radius:20px;
+
+}
+
+.skill-card{
+
+    background:#1e293b;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.skill-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(13,110,253,.20);
+
+}
+
+.icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:35px;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.network{
+    background:#0d6efd;
+}
+
+.support{
+    background:#198754;
+}
+
+.web{
+
+    background:#ffc107;
+
+    color:#212529;
+
+}
+
+.hardware{
+
+    background:#dc3545;
+
+}
+
+
+.skill-card h4{
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.skill-card p{
+
+    color:#cbd5e1;
+
+    min-height:90px;
+
+}
+
+.skill-tags{
+    margin-top:20px;
+}
+
+.skill-tags span{
+
+    display:inline-block;
+
+    padding:7px 15px;
+
+    margin:5px;
+
+    background:#334155;
+    color:#93c5fd;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+/* Project Card */
+.project-card {
+    background:#1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%; /* Semua card memiliki tinggi yang sama */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+         transform:translateY(-12px);
+        box-shadow:0 20px 45px rgba(13,110,253,.20);
+        
+}
+
+/* Gambar Project */
+.project-card img {
+    width: 100%;
+    height: 220px; /* Tinggi semua gambar sama */
+    object-fit: cover; /* Gambar tidak gepeng */
+}
+
+/* Isi Card */
+.project-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#certificates{
+    background:#111827;
+}
+
+/* Tombol berada di bawah */
+.project-content .mt-4 {
+    margin-top: auto;
+}
+
+#certificates .card {
+    border: none;
+    border-radius: 15px;
+    overflow: visible;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    height: 100%;
+     background:#1e293b;
+    color:#f8fafc;
+     transition: all .35s ease;
+}
+
+
+#certificates .card:hover{
+    transform: translateY(-12px);
+    box-shadow:
+        0 0 25px rgba(59,130,246,.6),
+        0 20px 50px rgba(59,130,246,.5);
+}
+
+#certificates .card-img-top {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+     background:#0f172a;
+    padding: 15px;
+}
+
+#certificates .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#certificates .btn {
+    margin-top: auto;
+}
+
+/*==========================
+        CONTACT
+===========================*/
+
+.contact-section{
+    padding:120px 0;
+    background:#111827;
+}
+
+.contact-content{
+    max-width:760px;
+    margin:auto;
+}
+
+.contact-subtitle{
+    color:#60a5fa;
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.contact-content h2{
+    margin:20px 0;
+    font-size:48px;
+    font-weight:700;
+    color:#fff;
+}
+
+.contact-content p{
+    color:#94a3b8;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.contact-info{
+    margin-top:70px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.contact-info a{
+    text-decoration:none;
+    color:#cbd5e1;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.contact-info a i{
+    font-size:20px;
+    color:#3b82f6;
+}
+
+.contact-info a:hover{
+    color:#60a5fa;
+}
+
+/*==========================
+        FOOTER
+===========================*/
+
+.footer{
+
+    background:#020617;
+    padding:70px 0 35px;
+    text-align:center;
+
+}
+
+.footer h4{
+
+    color:#fff;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    color:#94a3b8;
+    max-width:600px;
+    margin:auto;
+    line-height:1.8;
+
+}
+
+.footer-social{
+
+    margin:35px 0;
+
+}
+
+.footer-social a{
+
+    width:50px;
+    height:50px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#1e293b;
+    color:white;
+    text-decoration:none;
+    margin:0 8px;
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#2563eb;
+    transform:translateY(-6px);
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid #334155;
+    margin-top:40px;
+    padding-top:25px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+    color:#64748b;
+    font-size:15px;
+
+}
+
+.dot{
+
+    width:6px;
+    height:6px;
+    background:#3b82f6;
+    border-radius:50%;
+
+}
+
